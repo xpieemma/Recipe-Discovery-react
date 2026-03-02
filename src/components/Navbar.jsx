@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 export default function Navbar() {
-   
+   return (
    <nav>
       <div>
          <Link to ="/"> 🍳 Recipe Discovery</Link>
@@ -16,4 +16,5 @@ export default function Navbar() {
 <SearchBar />
 
    </nav>
+   );
 }
