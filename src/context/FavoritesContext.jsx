@@ -1,16 +1,18 @@
-import { createContext, useCallback, useContext } from "react"
-import useLocalStorage from "../hooks/useLocalStrorage";
+
+import {useCallback } from "react"
+import useLocalStorage from "../hooks/useLocalStorage";
+import { FavoritesContext } from "./_FavoritesContext";
 
 
-const FavoritesContext = createContext();
 
-export const useFavorites = () => {
-  const context = useContext(FavoritesContext);
-  if (!context){
-    throw new Error ('provider error ');
-  }
-  return context;
-};
+
+// export const useFavorites = () => {
+//   const context = useContext(FavoritesContext);
+//   if (!context){
+//     throw new Error ('provider error ');
+//   }
+//   return context;
+// };
 
 export function FavoritesProvider({children}) {
   const [favorites, setFavorites] = useLocalStorage('favorites', []);

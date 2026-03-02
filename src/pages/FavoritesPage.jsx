@@ -1,6 +1,6 @@
 import RecipeCard from "../components/RecipeCard";
 import { Link } from "react-router-dom";
-import { useFavorites } from "../context/FavoritesContext";
+import { useFavorites } from "../hooks/useFavorites";
 
 export default function FavoritesPage () {
 
