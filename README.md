@@ -30,11 +30,11 @@ A modern, feature-rich React application that allows users to discover, search, 
    cd Recipe-Discovery-react
 Install dependencies
 
-bash
+```bash
 npm install
 Start the development server
 
-bash
+```bash
 npm start
 Open your browser
 Navigate to localhost to view the app
